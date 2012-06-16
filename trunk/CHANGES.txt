@@ -2,6 +2,9 @@
 MiniTemplator Changes (Java version)
 ------------------------------------
 
+2012-06-16 chdh
+Documentation of MiniTemplatorCache class extended.
+
 2011-11-27 chdh
 Short form syntax added for conditional blocks.
 
