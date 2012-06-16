@@ -22,9 +22,20 @@ import java.util.HashMap;
 * each template file is only read and parsed once.
 *
 * <p>
+* Example of how to use the template cache:<br>
+* <pre>
+*  private static MiniTemplatorCache miniTemplatorCache = new MiniTemplatorCache();
+*
+*  public static MiniTemplator getTemplate (String templateFileName, Set<String> flags) throws Exception {
+*     MiniTemplator.TemplateSpecification templateSpec = new MiniTemplator.TemplateSpecification();
+*     templateSpec.templateFileName = templateFileName;
+*     templateSpec.conditionFlags = flags;
+*     return miniTemplatorCache.get(templateSpec); };</pre>
+*
+* <p>
 * Home page: <a href="http://www.source-code.biz/MiniTemplator">www.source-code.biz/MiniTemplator</a><br>
 * Author: Christian d'Heureuse, Inventec Informatik AG, Zurich, Switzerland<br>
-* Multi-licensed: EPL/LGPL.
+* Multi-licensed: EPL / LGPL.
 */
 public class MiniTemplatorCache {
 
